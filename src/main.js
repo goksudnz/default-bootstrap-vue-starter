@@ -1,17 +1,18 @@
 import Vue from 'vue'
 import router from './routes/router';
 import store from './state/store';
-import VueMaterial from 'vue-material';
+import { BootstrapVue, IconsPlugin } from 'bootstrap-vue';
 
 //default files
-import 'vue-material/dist/vue-material.min.css';
-import 'vue-material/dist/theme/default.css';
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 import App from './App'
 
 Vue.config.productionTip = false;
 
-Vue.use(VueMaterial);
+Vue.use(BootstrapVue);
+Vue.use(IconsPlugin);
 
 new Vue({
   router,
